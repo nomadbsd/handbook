@@ -14,7 +14,6 @@
 		1. [BTRFS, ReiserFS, XFS](#linuxfs)
 1. [Networking](#networking)
 	1. [Wireless Networking](#wifi)
-<!-- Add more common topics here -->
 1. [Advanced Topics](#advanced)
 	1. [Resetting NomandBSD](#reset)
 		1. [Limitations](#reset_limits)
