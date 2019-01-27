@@ -17,6 +17,9 @@
 1. [Advanced Topics](#advanced)
 	1. [Resetting NomandBSD](#reset)
 		1. [Limitations](#reset_limits)
+1. [Troubleshooting](#troubleshooting)
+	1. [Graphics](#ts_graphics)
+		1. [ATI/AMD](#ts_ati_amd)
 
 <a name="intro"></a>
 ## Intro
@@ -156,3 +159,28 @@ After rebooting you'll be greeted by the setup again.
 If you have modified or deleted system files from directory trees other than
 `/home`, `/private`, `/etc`, `/var`, `/root`, `/tmp`, and `/usr.local.etc`,
 you might not be able to cleanly reset NomadBSD.
+
+<a name="troubleshooting"></a>
+## Troubleshooting
+<a name="ts_graphics"></a>
+### Graphics
+<a name="ts_ati_amd"></a>
+#### ATI/AMD
+If you are booting a system with ATI/AMD graphics via UEFI, you might
+experience some problems. Due to
+[a conflict with the EFI framebuffer](https://wiki.freebsd.org/Graphics#AMD_Graphics),
+NomadBSD might crash or hang when the graphics driver gets loaded, or it just
+isn't able to start the X window system.
+
+Try the following workaround:
+
+1. (Re)boot and enter the boot submenu `Boot Options` (`6`).
+2. Change `Disable syscons` to `On` by pressing the key matching the item
+number.
+3. Go back to main menu, and press `<Enter>` to boot.
+
+- - -
+
+**Note:** You won't see any boot messages until the graphics driver gets loaded.
+
+- - -
