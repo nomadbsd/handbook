@@ -49,16 +49,19 @@ h3 {
 
 h4 {
 	text-align: left;
-	margin-top: .5em;
-	margin-bottom: .5em;
 	color: #2c3133;
 	font-family: sans;
 }
 
 p {
-	margin-top: .5em;
-	margin-bottom: 1em;
+	margin-top: .25em;
+	margin-bottom: .75em;
 	text-align: justify;
+}
+
+hr {
+	margin-top: .75em;
+	margin-bottom: .75em;
 }
 
 th {
@@ -78,3 +81,15 @@ pre {
 	font-family: Source Code Pro Medium, Courier New, Courier, monospace;
 }
 
+b, strong {
+	color: #2c3133;
+}
+
+h1, h2, h3, h4 {
+	margin-top: .75em;
+	margin-bottom: .75em;
+}
+
+li {
+	margin-bottom: .45em;
+}
