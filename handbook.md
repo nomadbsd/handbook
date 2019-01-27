@@ -14,22 +14,26 @@
 		2. [BTRFS, ReiserFS, XFS](#linuxfs)
 6. [Networking](#networking)
 	1. [Wireless Networking](#wifi)
+<!-- Add more common topics here -->
+100. [Advanced Topics](#advanced)
+	1. [Resetting NomandBSD](#reset)
+		1. [Limitations](#reset_limits)
 
 <a name="intro"></a>
-## 1. Intro
+## Intro
 
 NomadBSD is a 64bit live system for USB flash drives, based on
 FreeBSD<sup>®</sup>. Together with automatic hardware detection and setup, it
 is configured to be used as a desktop system that works out of the box, but
-can also be used for data recovery, or to test FreeBSD<sup>®</sup> hardware
-compatibility.
+can also be used for data recovery, for educational purposes, or to test
+FreeBSD<sup>®</sup>'s hardware compatibility.
 
 <a name="installation"></a>
-## 2. Installation
+## Installation
 
 ### Choosing a USB flash drive
-NomadBSD performs well on USB 2.0 flash drives, but writing many small files
-can be very slow. To improve performace, you should consider using a USB 3.X
+NomadBSD performs well on USB 2.X flash drives, but writing many small files
+can be very slow. To improve performance, you should consider using a USB 3.X
 flash drive even on a USB 2.X port, as they tend to be faster. See
 [USB 3.0 Flash Drive Roundup](https://www.anandtech.com/show/4523/usb-30-flash-drive-roundup/6)
 
@@ -38,7 +42,7 @@ Instructions for writing the image to a flash drive from different operating
 systems can be found [here](https://nomadbsd.org/download.html).
 
 <a name="overview"></a>
-## 3. Overview
+## Overview
 ![](images/nomadbsd-overview.png)
 
 1. [Openbox](http://freshports/x11-wm/openbox) menu. You can reach it by
@@ -57,13 +61,13 @@ systems can be found [here](https://nomadbsd.org/download.html).
 	up the main window in which you	can see all the mountable storage devices
 	attached to the system. Use	the context menu of the device icons to select
 	an action (un/mounting,	opening, playing, ejecting) or double click to
-	mount and open the device in your default filemanager. You can use the
-	preferences menu to change the filemanager, autoplay setting, and
+	mount and open the device in your default file manager. You can use the
+	preferences menu to change the file manager, autoplay setting, and
 	multimedia programs.
 5. Date and time. Clicking in that area brings up a calendar.
 
 <a name="autostart"></a>
-## 4. Enable/Disable desktop components, and auto-start programs
+## Enable/Disable desktop components, and auto-start programs
 The program [DSBAutostart](http://freshports.org/sysutils/dsbautostart)
 ([Openbox menu](#overview) -> *Settings* -> *DSBAutostart*) allows you to control which
 programs are automatically executed when the graphical interface starts.
@@ -73,7 +77,7 @@ desktop. The changes take place after logging out and in again.
 ![](images/dsbautostart-screenshot.png)
 
 <a name="filesystems"></a>
-## 5. Filesystems
+## Filesystems
 NomadBSD comes with a bunch of pre-installed filesystems (CD9660, FAT, HFS+,
 NTFS, Ext2/3/4). You can mount storage devices via
 [DSBMC](http://freshports.org/sysutils/dsbmc) (see [Overview](#overview)),
@@ -116,10 +120,40 @@ ReiserFS, and XFS support.
 	# pkg install fusefs-lkl
 
 <a name="networking"></a>
-## 6. Networking
+## Networking
 <a name="wifi"></a>
 ### Wireless Networking
 The program [wifimgr](http://freshports.org/net-mgmt/wifimgr)
 ([Openbox menu](#overview) -> *Network* -> *WiFi Networks Manager*) allows
 you to connect to a wireless network.
 
+<a name="advanced"></a>
+## Advanced Topics
+
+<a name="reset"></a>
+### Resetting NomadBSD
+
+If you are a tester, or your experiments with the systems left a total mess,
+you might want to reset NomadBSD.
+
+- - -
+
+**Warning:** The reset will delete `/home`, `/private`, `/etc`,
+`/var`, `/root`, and `/usr.local.etc`. Make a backup if there are any files
+you want to keep.
+
+- - -
+
+You can reset NomadBSD as follows:
+
+1. Boot into single-user mode by (re)booting and choosing `2` in the boot
+menu.
+2. Execute `/usr/libexec/nomad/nomad_setup reset`
+
+After rebooting you'll be greeted by the setup again.
+
+<a name="reset_limits"></a>
+#### Limitations
+If you have modified or deleted system files from directory trees other than
+`/home`, `/private`, `/etc`, `/var`, `/root`, `/tmp`, and `/usr.local.etc`,
+you might not be able to cleanly reset NomadBSD.
