@@ -15,7 +15,7 @@
 6. [Networking](#networking)
 	1. [Wireless Networking](#wifi)
 <!-- Add more common topics here -->
-100. [Advanced Topics](#advanced)
+99. [Advanced Topics](#advanced)
 	1. [Resetting NomandBSD](#reset)
 		1. [Limitations](#reset_limits)
 
