@@ -6,6 +6,7 @@
 	1. [Choosing a USB flash drive](#choosemedia)
 	1. [Downloading an writing the image](#download)
 1. [Overview](#overview)
+1. [Key bindings](#keybindings)
 1. [Enable/Disable desktop components, and auto-start programs](#autostart)
 1. [Filesystem](#filesystems)
 	1. [Automount](#automount)
@@ -67,6 +68,17 @@ systems can be found [here](https://nomadbsd.org/download.html).
 	preferences menu to change the file manager, autoplay setting, and
 	multimedia programs.
 5. Date and time. Clicking in that area brings up a calendar.
+
+<a name="keybindings"></a>
+## Key bindings
+`<Alt>+<F2>`
+
+* Open DSBExec to execute a command.
+
+`<Ctrl>+<Space>`
+
+* Open [dmenu-run](https://www.freshports.org/x11/dmenu/) to execute a
+command.
 
 <a name="autostart"></a>
 ## Enable/Disable desktop components, and auto-start programs
