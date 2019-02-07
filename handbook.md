@@ -48,7 +48,7 @@ systems can be found [here](https://nomadbsd.org/download.html).
 ![](images/nomadbsd-overview.png)
 
 1. [Openbox](http://freshports/x11-wm/openbox) menu. You can reach it by
-	pressing the Windows<sup>®</sup> key (or Super key)/Cmd key
+	pressing the Windows<sup>®</sup> key (or Super key)/⌘ key
 	(Mac<sup>®</sup>), or by right-clicking on the background image
 	(root window).
 2. [DSBBatmon](http://freshports.org/sysutils/dsbbatmon). By hovering over
