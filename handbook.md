@@ -18,6 +18,7 @@
 1. [Advanced Topics](#advanced)
 	1. [Resetting NomandBSD](#reset)
 		1. [Limitations](#reset_limits)
+	1. [Disabling the graphics driver menu](#disablegfxmenu)
 1. [Troubleshooting](#troubleshooting)
 	1. [Graphics](#ts_graphics)
 		1. [ATI/AMD](#ts_ati_amd)
@@ -171,6 +172,13 @@ After rebooting you'll be greeted by the setup again.
 If you have modified or deleted system files from directory trees other than
 `/home`, `/private`, `/etc`, `/var`, `/root`, `/tmp`, and `/usr.local.etc`,
 you might not be able to cleanly reset NomadBSD.
+
+<a name="disablegfxmenu"></a>
+### Disabling the graphics driver menu
+If you are sure the autodetection of your graphics card works, and there is
+no need for VESA or SCFB, you can disable the menu by adding
+
+`initgfx_menu="NO"` to `/etc/rc.conf`.
 
 <a name="troubleshooting"></a>
 ## Troubleshooting
