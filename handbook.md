@@ -163,7 +163,7 @@ You can reset NomadBSD as follows:
 
 1. Boot into single-user mode by (re)booting and choosing `2` in the boot
 menu.
-2. Execute `/usr/libexec/nomad/nomad_setup reset`
+2. Execute `/usr/libexec/nomadbsd-reset`
 
 After rebooting you'll be greeted by the setup again.
 
