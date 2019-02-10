@@ -176,10 +176,13 @@ you might not be able to cleanly reset NomadBSD.
 
 <a name="disablegfxmenu"></a>
 ### Disabling the graphics driver menu
-If you are sure the autodetection of your graphics card works, and there is
-no need for VESA or SCFB, you can disable the menu by adding
+If you want to disable the graphics driver menu, add
 
 `initgfx_menu="NO"` to `/etc/rc.conf`.
+
+By default, `initgfx` will try autodetection, but you can instead define a
+default driver to use by setting `initgfx_default` to `"scfb"` or `"vesa"` in
+`/etc/rc.conf`.
 
 <a name="disableinitgfx"></a>
 ### Disabling automatic graphics driver setup
