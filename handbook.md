@@ -19,6 +19,7 @@
 	1. [Resetting NomandBSD](#reset)
 		1. [Limitations](#reset_limits)
 	1. [Disabling the graphics driver menu](#disablegfxmenu)
+	1. [Disabling automatic graphics driver setup](#disableinitgfx)
 1. [Troubleshooting](#troubleshooting)
 	1. [Graphics](#ts_graphics)
 		1. [ATI/AMD](#ts_ati_amd)
@@ -179,6 +180,13 @@ If you are sure the autodetection of your graphics card works, and there is
 no need for VESA or SCFB, you can disable the menu by adding
 
 `initgfx_menu="NO"` to `/etc/rc.conf`.
+
+<a name="disableinitgfx"></a>
+### Disabling automatic graphics driver setup
+If you want to create your own graphics driver settings, you can disable
+`initgfx` by adding
+
+`initgfx_enable="NO"` to `/etc/rc.conf`.
 
 <a name="troubleshooting"></a>
 ## Troubleshooting
