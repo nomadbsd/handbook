@@ -23,6 +23,7 @@
 1. [Troubleshooting](#troubleshooting)
 	1. [Graphics](#ts_graphics)
 		1. [ATI/AMD](#ts_ati_amd)
+		1. [NVIDIA](#ts_nvidia)
 
 <a name="intro"></a>
 ## Intro
@@ -215,3 +216,9 @@ number.
 **Note:** You won't see any boot messages until the graphics driver gets loaded.
 
 - - -
+
+<a name="ts_nvidia"></a>
+#### NVIDIA
+If you see an error message like `device_attach: nvidia0 attach returned 6`
+you could try to add `debug.acpi.disabled="sysres"` to `/boot/loader.conf`.
+
