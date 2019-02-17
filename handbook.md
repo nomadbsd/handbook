@@ -20,6 +20,7 @@
 		1. [Limitations](#reset_limits)
 	1. [Disabling the graphics driver menu](#disablegfxmenu)
 	1. [Disabling automatic graphics driver setup](#disableinitgfx)
+	1. [Installing NomadBSD on a hard disk](#hddinstall)
 1. [Troubleshooting](#troubleshooting)
 	1. [Graphics](#ts_graphics)
 		1. [ATI/AMD](#ts_ati_amd)
@@ -191,6 +192,18 @@ If you want to create your own graphics driver settings, you can disable
 `initgfx` by adding
 
 `initgfx_enable="NO"` to `/etc/rc.conf`.
+
+<a name="hddinstall"></a>
+### Installing NomadBSD on a hard disk
+Installing NomadBSD on a hard disk/SSD can be done as follows:
+
+1. Download and write the latest NomadBSD image to a USB flash drive as
+   described [here](https://nomadbsd.org/download.html).
+1. Boot it and run the setup.
+1. Boot NomadBSD into single-user mode by (re)booting and choosing `2` in the
+   boot menu.
+1. Run `/usr/libexec/nomadbsd-install`. The script allows you to choose
+   which device you wish to install NomadBSD on.
 
 <a name="troubleshooting"></a>
 ## Troubleshooting
