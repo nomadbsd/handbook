@@ -195,15 +195,10 @@ If you want to create your own graphics driver settings, you can disable
 
 <a name="hddinstall"></a>
 ### Installing NomadBSD on a hard disk
-Installing NomadBSD on a hard disk/SSD can be done as follows:
+Start [Openbox menu](#overview) -> *System* -> *NomadBSD Installer* and
+follow the instructions.
 
-1. Download and write the latest NomadBSD image to a USB flash drive as
-   described [here](https://nomadbsd.org/download.html).
-1. Boot it and run the setup.
-1. Boot NomadBSD into single-user mode by (re)booting and choosing `2` in the
-   boot menu.
-1. Run `/usr/libexec/nomadbsd-install`. The script allows you to choose
-   which device you wish to install NomadBSD on.
+![](images/installer-screenshot.png)
 
 <a name="troubleshooting"></a>
 ## Troubleshooting
