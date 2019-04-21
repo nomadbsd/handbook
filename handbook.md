@@ -46,7 +46,7 @@ flash drive even on a USB 2.X port, as they tend to be faster. See
 
 ### Downloading and writing the image
 Instructions for writing the image to a flash drive from different operating
-systems can be found [here](https://nomadbsd.org/download.html).
+systems can be found [here](http://nomadbsd.org/download.html).
 
 <a name="overview"></a>
 ## Overview
