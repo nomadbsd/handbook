@@ -21,6 +21,7 @@
 	1. [Disabling the graphics driver menu](#disablegfxmenu)
 	1. [Disabling automatic graphics driver setup](#disableinitgfx)
 	1. [Installing NomadBSD on a hard disk](#hddinstall)
+	1. [Running NomadBSD in VirtualBox<sup>™</sup>](#vbox)
 1. [Troubleshooting](#troubleshooting)
 	1. [Graphics](#ts_graphics)
 		1. [ATI/AMD](#ts_ati_amd)
@@ -199,6 +200,20 @@ Start [Openbox menu](#overview) -> *System* -> *NomadBSD Installer* and
 follow the instructions.
 
 ![](images/installer-screenshot.png)
+
+<a name="vbox"></a>
+### Running NomadBSD in Virtualbox<sup>™</sup>
+1. [Download and extract](http://nomadbsd.org/download.html) an image you intend to run.
+2. NomadBSD will use the remaining space on a USB flash drive for its `/home`
+partitition, but since we intend to run it from an image file, we increase the
+(potential) size of the image as follows:
+`truncate -s +4G nomadbsd-x.y.z.img`. If you need more or less extra space, change the
+`-s` parameter accordingly.
+3. Create a vmdk file: `VBoxManage internalcommands createrawvmdk -filename ~/nomadbsd.vmdk -rawdisk nomadbsd-x.y.z.img`
+4. Start VirtualBox<sup>™</sup>, and create a new virtual machine. Select
+*Use an existing virtual hard disk file* in the *Hard disk* settings, and
+choose *nomadbsd.vmdk* which we created in 3.
+![](images/create-vbox-machine.png)
 
 <a name="troubleshooting"></a>
 ## Troubleshooting
