@@ -23,6 +23,7 @@
 	1. [Installing NomadBSD on a hard disk](#hddinstall)
 	1. [Running NomadBSD in VirtualBox<sup>™</sup>](#vbox)
 1. [Troubleshooting](#troubleshooting)
+	1. [Errata](#errata)
 	1. [Graphics](#ts_graphics)
 		1. [ATI/AMD](#ts_ati_amd)
 		1. [NVIDIA](#ts_nvidia)
@@ -217,6 +218,10 @@ choose *nomadbsd.vmdk* which we created in 3.
 
 <a name="troubleshooting"></a>
 ## Troubleshooting
+<a name="errata"></a>
+### Errata
+If you experience any problems, consult the
+[NomadBSD Errata](http://nomadbsd.org/download/errata-1.2.txt) first.
 <a name="ts_graphics"></a>
 ### Graphics
 <a name="ts_ati_amd"></a>
