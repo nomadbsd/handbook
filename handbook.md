@@ -214,11 +214,11 @@ partitition, but since we intend to run it from an image file, we increase the
 4. Start VirtualBox<sup>™</sup>, and create a new virtual machine. Select
 *Use an existing virtual hard disk file* in the *Hard disk* settings, and
 choose *nomadbsd.vmdk* which we created in 3.
+![](images/create-vbox-machine.png)
+
 5. Go to *Settings* -> *Display* and set the video memory to 128MB or more.
 6. Go to *Settings* -> *System* -> *Processor* and set the number of
 processors to 2.
-
-![](images/create-vbox-machine.png)
 
 <a name="troubleshooting"></a>
 ## Troubleshooting
