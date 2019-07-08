@@ -210,7 +210,7 @@ partitition, but since we intend to run it from an image file, we increase the
 (potential) size of the image as follows:
 `truncate -s +4G nomadbsd-x.y.z.img`. If you need more or less extra space, change the
 `-s` parameter accordingly.
-3. Create a vmdk file: `VBoxManage internalcommands createrawvmdk -filename ~/nomadbsd.vmdk -rawdisk nomadbsd-x.y.z.img`
+3. Create a vmdk file: `VBoxManage internalcommands createrawvmdk -filename ~/nomadbsd.vmdk -rawdisk /full/path/to/nomadbsd-x.y.z.img`
 4. Start VirtualBox<sup>™</sup>, and create a new virtual machine. Select
 *Use an existing virtual hard disk file* in the *Hard disk* settings, and
 choose *nomadbsd.vmdk* which we created in 3.
