@@ -15,6 +15,7 @@
 		1. [BTRFS, ReiserFS, XFS](#linuxfs)
 1. [Networking](#networking)
 	1. [Wireless Networking](#wifi)
+1. [Multihead setup](#multihead)
 1. [Advanced Topics](#advanced)
 	1. [Resetting NomandBSD](#reset)
 		1. [Limitations](#reset_limits)
@@ -146,6 +147,14 @@ ReiserFS, and XFS support.
 The program [wifimgr](http://freshports.org/net-mgmt/wifimgr)
 ([Openbox menu](#overview) -> *Network* -> *WiFi Networks Manager*) allows
 you to connect to a wireless network.
+
+<a name="multihead"></a>
+## Multihead setup
+By default, NomadBSD enables all connected outputs (monitors). The tool
+[ArandR](http://freshports.org/x11/arandr)
+([Openbox menu](#overview)-> *Settings* -> *ArandR*) allows you to configure
+the position, resolution, etc. of your monitors. Save your changes to
+`~/.screenlayout/default.sh` which is automatically executed on session start.
 
 <a name="advanced"></a>
 ## Advanced Topics
