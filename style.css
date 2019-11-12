@@ -93,3 +93,7 @@ h1, h2, h3, h4 {
 li {
 	margin-bottom: .45em;
 }
+
+a {
+	color: #2464bc;
+}
