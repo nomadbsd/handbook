@@ -87,6 +87,10 @@ systems can be found [here](http://nomadbsd.org/download.html).
 * Open [dmenu-run](https://www.freshports.org/x11/dmenu/) to execute a
 command.
 
+`<Print>`
+
+* Open XFCE 4 screenshooter.
+
 <a name="autostart"></a>
 ## Enable/Disable desktop components, and auto-start programs
 The program [DSBAutostart](http://freshports.org/sysutils/dsbautostart)
