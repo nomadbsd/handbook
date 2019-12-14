@@ -4,7 +4,7 @@
 1. [Intro](#intro)
 1. [Installation](#installation)
 	1. [Choosing a USB flash drive](#choosemedia)
-	1. [Downloading an writing the image](#download)
+	1. [Downloading and writing the image](#download)
 1. [Overview](#overview)
 1. [Key bindings](#keybindings)
 1. [Enable/Disable desktop components, and auto-start programs](#autostart)
@@ -17,7 +17,7 @@
 	1. [Wireless Networking](#wifi)
 1. [Multihead setup](#multihead)
 1. [Advanced Topics](#advanced)
-	1. [Resetting NomandBSD](#reset)
+	1. [Resetting NomadBSD](#reset)
 		1. [Limitations](#reset_limits)
 	1. [Disabling the graphics driver menu](#disablegfxmenu)
 	1. [Disabling automatic graphics driver setup](#disableinitgfx)
@@ -87,6 +87,10 @@ systems can be found [here](http://nomadbsd.org/download.html).
 
 * Open [dmenu-run](https://www.freshports.org/x11/dmenu/) to execute a
 command.
+
+`<Print>`
+
+* Open XFCE 4 screenshooter.
 
 <a name="autostart"></a>
 ## Enable/Disable desktop components, and auto-start programs
