@@ -83,6 +83,10 @@ systems can be found [here](http://nomadbsd.org/download.html).
 
 * Open DSBExec to execute a command.
 
+`<Ctrl>+<Alt>+L`
+
+* Lock the screen.
+
 `<Ctrl>+<Space>`
 
 * Open [dmenu-run](https://www.freshports.org/x11/dmenu/) to execute a
