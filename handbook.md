@@ -45,7 +45,8 @@ FreeBSD<sup>®</sup>'s hardware compatibility.
 NomadBSD performs well on USB 2.X flash drives, but writing many small files
 can be very slow. To improve performance, you should consider using a USB 3.X
 flash drive even on a USB 2.X port, as they tend to be faster. See
-[USB 3.0 Flash Drive Roundup](https://www.anandtech.com/show/4523/usb-30-flash-drive-roundup/6)
+[USB 3.0 Flash Drive Roundup](https://www.anandtech.com/show/4523/usb-30-flash-drive-roundup/6). Do not use cheap no-name thumb drives they sell at super markets
+and drug stores. These drives are very slow and unreliable.
 
 ### Downloading and writing the image
 Instructions for writing the image to a flash drive from different operating
