@@ -30,7 +30,8 @@
 	1. [Graphics](#ts_graphics)
 		1. [ATI/AMD](#ts_ati_amd)
 		1. [NVIDIA](#ts_nvidia)
-
+		1. [Distorted/squished EFI framebuffer screen](#efifb)
+		
 <a name="intro"></a>
 ## Intro
 
@@ -291,3 +292,23 @@ number.
 If you see an error message like `device_attach: nvidia0 attach returned 6`
 you could try to add `debug.acpi.disabled="sysres"` to `/boot/loader.conf`.
 
+<a name="efifb"></a>
+#### Distorted/squished EFI framebuffer screen
+If you happend to see that the screen content seems to be *squished* into
+the upper 1/3 half of your monitor you can try the following:
+
+1. Reboot, and then enter the loader prompt by pressing `3` at the boot menu.
+2. Type:
+	<pre>
+	set gop 0
+	boot
+	</pre>
+
+If that didn't solve the problem, enter the loader prompt as described above,
+and type `list gop` to see a list of supported modes. According to the list
+try another mode number for the `set gop` command in 2.). If you found a mode
+that resolves the problem, you can save that setting by adding the line
+`exec="set gop X"` to `/boot/loader.conf`, where `X` is the mode number.
+
+Another way to solve this problem is to boot your system in legacy mode.
+Consult your EFI/BIOS manual.
