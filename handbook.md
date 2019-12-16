@@ -295,7 +295,7 @@ you could try to add `debug.acpi.disabled="sysres"` to `/boot/loader.conf`.
 <a name="efifb"></a>
 #### Distorted/squished EFI framebuffer screen
 If you happend to see that the screen content seems to be *squished* into
-the upper 1/3 half of your monitor you can try the following:
+the upper 1/3 of your monitor you can try the following:
 
 1. Reboot, and then enter the loader prompt by pressing `3` at the boot menu.
 2. Type:
