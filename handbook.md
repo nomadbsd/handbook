@@ -24,6 +24,7 @@
 	1. [Disabling automatic graphics driver setup](#disableinitgfx)
 	1. [Installing NomadBSD on a hard disk](#hddinstall)
 	1. [Running NomadBSD in VirtualBox<sup>™</sup>](#vbox)
+	1. [Installing Linux<sup>®</sup> packages](#linuxpkg)
 1. [Troubleshooting](#troubleshooting)
 	1. [Errata](#errata)
 	1. [Graphics](#ts_graphics)
@@ -244,12 +245,24 @@ choose *nomadbsd.vmdk* which we created in 3.
 6. Go to *Settings* -> *System* -> *Processor* and set the number of
 processors to 2.
 
+<a href="linuxpkg"></a>
+## Installing Linux<sup>®</sup> packages
+
+Before you can install Linux<sup>®</sup> packages it is necessary to enable
+<a href="https://www.freebsd.org/doc/handbook/linuxemu-lbc-install.html">Linux<sup>®</sup> binary compatibility</a>.
+Let's say you want to install <a href="https://freshports.org/editors/linux-sublime">linux-sublime</a>
+you can proceed as follows:
+
+	# kldload linux
+	# sysrc linux_enable=YES
+	# pkg install linux-sublime
+
 <a name="troubleshooting"></a>
 ## Troubleshooting
 <a name="errata"></a>
 ### Errata
 If you experience any problems, consult the
-[NomadBSD Errata](http://nomadbsd.org/download/errata-1.2.txt) first.
+<strike>[NomadBSD Errata](http://nomadbsd.org/download/errata-1.2.txt)</strike> first.
 <a name="ts_graphics"></a>
 ### Graphics
 <a name="ts_ati_amd"></a>
