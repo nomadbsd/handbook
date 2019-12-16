@@ -8,6 +8,7 @@
 1. [Overview](#overview)
 1. [Key bindings](#keybindings)
 1. [Enable/Disable desktop components, and auto-start programs](#autostart)
+1. [Adding applications to the *plank* panel](#plank)
 1. [Filesystem](#filesystems)
 	1. [Automount](#automount)
 	1. [Extending filesystem support](#fssupport)
@@ -105,6 +106,11 @@ Further, it allows you to enable/disable some components of the NomadBSD
 desktop. The changes take place after logging out and in again.
 
 ![](images/dsbautostart-screenshot.png)
+<a name="plank"></a>
+## Adding applications to the *plank* panel
+Open your prefered graphical file manager, and navigate to `/usr/local/share/applications`.
+You can also get there by clicking the shortcut *Applications* on the side pane.
+Use Drag&Drop to add application icons to the *plank* panel.
 
 <a name="filesystems"></a>
 ## Filesystems
