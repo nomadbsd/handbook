@@ -18,6 +18,8 @@
 1. [Networking](#networking)
 	1. [Wireless Networking](#wifi)
 1. [Multihead setup](#multihead)
+1. [Sound](#sound)
+	1. [Selecting the default audio device](#defaultaudio)
 1. [Advanced Topics](#advanced)
 	1. [Resetting NomadBSD](#reset)
 		1. [Limitations](#reset_limits)
@@ -186,6 +188,14 @@ By default, NomadBSD enables all connected outputs (monitors). The tool
 ([Openbox menu](#overview)-> *Settings* -> *ArandR*) allows you to configure
 the position, resolution, etc. of your monitors. Save your changes to
 `~/.screenlayout/default.sh` which is automatically executed on session start.
+<a name="sound"></a>
+## Sound
+<a name="defaultaudio"></a>
+### Selecting the default audio device
+Right-click on the speaker/volume indicator icon in the panel, and choose
+*Preferences* from the menu. In the preferences window go to the
+*Default device* tab, select the sound card/device, and click on *Ok*. 
+In order to take effect make sure to restart your audio application(s).
 
 <a name="advanced"></a>
 ## Advanced Topics
