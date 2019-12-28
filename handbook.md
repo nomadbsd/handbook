@@ -9,6 +9,7 @@
 1. [Key bindings](#keybindings)
 1. [Enable/Disable desktop components, and auto-start programs](#autostart)
 1. [Adding applications to the *plank* panel](#plank)
+1. [Display manager settings: Auto login, default user, and theme](#dmconfig)
 1. [Filesystem](#filesystems)
 	1. [Automount](#automount)
 	1. [Extending filesystem support](#fssupport)
@@ -113,6 +114,19 @@ desktop. The changes take place after logging out and in again.
 Open your prefered graphical file manager, and navigate to `/usr/local/share/applications`.
 You can also get there by clicking the shortcut *Applications* on the side pane.
 Use Drag&Drop to add application icons to the *plank* panel.
+
+<a name="dmconfig"></a>
+## Display manager settings: Auto login, default user, and theme
+The display manager, [Slim](https://freshports.org/x11/slim), used by NomadBSD
+is configured to automatically log in the default user *nomad*. The program
+*nomadbsd-dmconfig* ([Openbox menu](#overview) -> *Settings* -> *Display manager settings*)
+allows you to change/disable the default user, and to enable/disable auto login.
+Futhermore, it lets you change the theme. If you want to add a new theme, copy
+the theme's directory to */usr/local/share/slim/themes/*. To see a preview
+in *nomadbsd-dmconfig* copy a screenshot of the login screen to
+*/usr/local/share/slim/themes/your-theme-name/preview.png*.
+
+![](images/nomadbsd-dmconfig-screenshot.png)
 
 <a name="filesystems"></a>
 ## Filesystems
