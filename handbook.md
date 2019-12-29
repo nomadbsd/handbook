@@ -18,7 +18,9 @@
 		1. [BTRFS, ReiserFS, XFS](#linuxfs)
 1. [Networking](#networking)
 	1. [Wireless Networking](#wifi)
-1. [Multihead setup](#multihead)
+1. [Graphics](#grafics)
+	1. [Multihead setup](#multihead)
+	1. [Changing display settings](#displaysettings)
 1. [Sound](#sound)
 	1. [Selecting the default audio device](#defaultaudio)
 1. [Advanced Topics](#advanced)
@@ -189,13 +191,22 @@ The program [wifimgr](http://freshports.org/net-mgmt/wifimgr)
 ([Openbox menu](#overview) -> *Network* -> *WiFi Networks Manager*) allows
 you to connect to a wireless network.
 
+<a name="graphics"></a>
+## Graphics
 <a name="multihead"></a>
-## Multihead setup
+### Multihead setup
 By default, NomadBSD enables all connected outputs (monitors). The tool
 [ArandR](http://freshports.org/x11/arandr)
 ([Openbox menu](#overview)-> *Settings* -> *ArandR*) allows you to configure
 the position, resolution, etc. of your monitors. Save your changes to
 `~/.screenlayout/default.sh` which is automatically executed on session start.
+### Changing display settings
+The program ([Openbox menu](#overview)-> *Settings* -> *DSBDisplaySettings*)
+allows you to change the brightness, gamma, screen mode, display power management
+(DPMS) settings, etc.
+
+![](images/dsbdisplaysettings-screenshot.png)
+
 <a name="sound"></a>
 ## Sound
 <a name="defaultaudio"></a>
