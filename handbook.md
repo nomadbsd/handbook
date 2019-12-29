@@ -5,6 +5,7 @@
 1. [Installation](#installation)
 	1. [Choosing a USB flash drive](#choosemedia)
 	1. [Downloading and writing the image](#download)
+1. [The NomadBSD setup](#firstboot)
 1. [Overview](#overview)
 1. [Key bindings](#keybindings)
 1. [Enable/Disable desktop components, and auto-start programs](#autostart)
@@ -60,6 +61,14 @@ and drug stores. These drives are very slow and unreliable.
 ### Downloading and writing the image
 Instructions for writing the image to a flash drive from different operating
 systems can be found [here](http://nomadbsd.org/download.html).
+
+<a name="firstboot"></a>
+## The NomadBSD setup
+When you boot NomadBSD for the first time, it will run the setup wizard which
+allows you to set your locale, timezone, keyboard settings, password,
+encryption, and default applications. The setup creates a new partition for
+the `/home` directory which uses the remaining space on the storage device.
+Depending on the size, creating the file system can take several minutes.
 
 <a name="overview"></a>
 ## Overview
