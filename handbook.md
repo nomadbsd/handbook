@@ -10,6 +10,7 @@
 1. [Enable/Disable desktop components, and auto-start programs](#autostart)
 1. [Adding applications to the *plank* panel](#plank)
 1. [Display manager settings: Auto login, default user, and theme](#dmconfig)
+1. [Adding a preconfigured user account](#adduser)
 1. [Filesystem](#filesystems)
 	1. [Automount](#automount)
 	1. [Extending filesystem support](#fssupport)
@@ -129,6 +130,13 @@ in *nomadbsd-dmconfig* copy a screenshot of the login screen to
 */usr/local/share/slim/themes/your-theme-name/preview.png*.
 
 ![](images/nomadbsd-dmconfig-screenshot.png)
+<a name="adduser"></a>
+## Adding a preconfigured user account
+If you want to add a further preconfigured user account use
+*nomadbsd-adduser* ([Openbox menu](#overview) -> *System* -> *Add user*).
+Since NomadBSD is configured to automatically log in the user *nomad* you
+need to change that behaviour in order to be able to log in as another
+user. See [*nomadbsd-dmconfig*](#dmconfig).
 
 <a name="filesystems"></a>
 ## Filesystems
