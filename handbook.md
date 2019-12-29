@@ -200,6 +200,8 @@ By default, NomadBSD enables all connected outputs (monitors). The tool
 ([Openbox menu](#overview)-> *Settings* -> *ArandR*) allows you to configure
 the position, resolution, etc. of your monitors. Save your changes to
 `~/.screenlayout/default.sh` which is automatically executed on session start.
+
+<a name="displaysettings"></a>
 ### Changing display settings
 The program ([Openbox menu](#overview)-> *Settings* -> *DSBDisplaySettings*)
 allows you to change the brightness, gamma, screen mode, display power management
