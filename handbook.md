@@ -125,7 +125,7 @@ desktop. The changes take place after logging out and in again.
 ![](images/dsbautostart-screenshot.png)
 <a name="plank"></a>
 ## Adding applications to the *plank* panel
-Open your prefered graphical file manager, and navigate to `/usr/local/share/applications`.
+Open your preferred graphical file manager, and navigate to `/usr/local/share/applications`.
 You can also get there by clicking the shortcut *Applications* on the side pane.
 Use Drag&Drop to add application icons to the *plank* panel.
 
@@ -135,7 +135,7 @@ The display manager, [Slim](https://freshports.org/x11/slim), used by NomadBSD
 is configured to automatically log in the default user *nomad*. The program
 *nomadbsd-dmconfig* ([Openbox menu](#overview) -> *Settings* -> *Display manager settings*)
 allows you to change/disable the default user, and to enable/disable auto login.
-Futhermore, it lets you change the theme. If you want to add a new theme, copy
+Furthermore, it lets you change the theme. If you want to add a new theme, copy
 the theme's directory to */usr/local/share/slim/themes/*. To see a preview
 in *nomadbsd-dmconfig* copy a screenshot of the login screen to
 */usr/local/share/slim/themes/your-theme-name/preview.png*.
@@ -286,7 +286,7 @@ follow the instructions.
 ### Running NomadBSD in Virtualbox<sup>™</sup>
 1. [Download and extract](http://nomadbsd.org/download.html) an image you intend to run.
 2. NomadBSD will use the remaining space on a USB flash drive for its `/home`
-partitition, but since we intend to run it from an image file, we increase the
+partition, but since we intend to run it from an image file, we increase the
 (potential) size of the image as follows:
 `truncate -s +4G nomadbsd-x.y.z.img`. If you need more or less extra space, change the
 `-s` parameter accordingly.
@@ -348,7 +348,7 @@ you could try to add `debug.acpi.disabled="sysres"` to `/boot/loader.conf`.
 
 <a name="efifb"></a>
 #### Distorted/squished EFI framebuffer screen
-If you happend to see that the screen content seems to be *squished* into
+If you happened to see that the screen content seems to be *squished* into
 the upper 1/3 of your monitor you can try the following:
 
 1. Reboot, and then enter the loader prompt by pressing `3` at the boot menu.
