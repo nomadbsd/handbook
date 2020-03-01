@@ -117,7 +117,7 @@ command.
 <a name="autostart"></a>
 ## Enable/Disable desktop components, and auto-start programs
 The program [DSBAutostart](http://freshports.org/sysutils/dsbautostart)
-([Openbox menu](#overview) -> *Settings* -> *DSBAutostart*) allows you to control which
+([Openbox menu](#overview) -> *Settings* -> *Autostart Settings*) allows you to control which
 programs are automatically executed when the graphical interface starts.
 Further, it allows you to enable/disable some components of the NomadBSD
 desktop. The changes take place after logging out and in again.
@@ -212,7 +212,7 @@ the position, resolution, etc. of your monitors. Save your changes to
 
 <a name="displaysettings"></a>
 ### Changing display settings
-The program ([Openbox menu](#overview)-> *Settings* -> *DSBDisplaySettings*)
+The program ([Openbox menu](#overview)-> *Settings* -> *Display Settings*)
 allows you to change the brightness, gamma, screen mode, display power management
 (DPMS) settings, etc.
 
