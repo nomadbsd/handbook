@@ -38,6 +38,7 @@
 		1. [ATI/AMD](#ts_ati_amd)
 		1. [NVIDIA](#ts_nvidia)
 		1. [Distorted/squished EFI framebuffer screen](#efifb)
+		1. [Hybrid Combination/Switchable Graphics](#hybridgfx)
 		
 <a name="intro"></a>
 ## Intro
@@ -366,3 +367,9 @@ that resolves the problem, you can save that setting by adding the line
 
 Another way to solve this problem is to boot your system in legacy mode.
 Consult your EFI/BIOS manual.
+
+<a name="hybridgfx"></a>
+#### Hybrid Combination/Switchable Graphics
+
+NomadBSD doesn't support switchable graphics like *Optimus* yet. If the
+Xorg server fails to start, disable one of the GPUs in your system's BIOS/UEFI.
