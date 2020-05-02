@@ -174,8 +174,15 @@ Rebooting the system, or restarting
 Unfortunately,
 [sysutils/fusefs-exfat](https://freshports.org/sysutils/fusefs-exfat)
 requires a license from Microsoft<sup>®</sup>, and so it can't be
-pre-installed. You have to build it yourself by using the ports or the
-[Git repo](https://github.com/relan/exfat.git):
+pre-installed. You have to build it yourself by using the ports:
+
+        # pkg install autoconf
+        # pkg install automake
+        # svnlite co https://svn.freebsd.org/ports/head/sysutils/fusefs-exfat /tmp/fusefs-exfat
+        # cd /tmp/fusefs-exfat
+        # make DISTDIR=/tmp install
+
+or the [Git repo](https://github.com/relan/exfat.git):
 
 	# pkg install autoconf
 	# pkg install automake
