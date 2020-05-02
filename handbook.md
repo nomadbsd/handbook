@@ -8,6 +8,8 @@
 1. [The NomadBSD setup](#firstboot)
 1. [Overview](#overview)
 1. [Key bindings](#keybindings)
+	1. [Global keybindings](#globalkeybindings)
+	1. [Terminal keybindings](#terminalkeybindings)
 1. [Enable/Disable desktop components, and auto-start programs](#autostart)
 1. [Adding applications to the *plank* panel](#plank)
 1. [Display manager settings: Auto login, default user, and theme](#dmconfig)
@@ -98,6 +100,9 @@ Depending on the size, creating the file system can take several minutes.
 
 <a name="keybindings"></a>
 ## Key bindings
+<a name="globalkeybindings"></a>
+### Global keybindings
+
 `<Alt>+<F2>`
 
 * Open DSBExec to execute a command.
@@ -114,6 +119,17 @@ command.
 `<Print>`
 
 * Open XFCE 4 screenshooter.
+
+<a name="terminalkeybindings"></a>
+### Terminal keybindings
+`<Shift>+<Ctrl>+C`
+
+* Copy selected text
+
+`<Shift>+<Ctrl>+V`
+
+* Paste copied text
+
 
 <a name="autostart"></a>
 ## Enable/Disable desktop components, and auto-start programs
