@@ -36,6 +36,8 @@
 	1. [Installing Linux<sup>®</sup> packages](#linuxpkg)
 1. [Troubleshooting](#troubleshooting)
 	1. [Errata](#errata)
+	1. [Boot process](#ts_boot)
+		1. [The boot process stops at the *mountroot* prompt](#ts_mountroot)
 	1. [Graphics](#ts_graphics)
 		1. [ATI/AMD](#ts_ati_amd)
 		1. [NVIDIA](#ts_nvidia)
@@ -346,6 +348,12 @@ you can proceed as follows:
 ### Errata
 If you experience any problems, consult the
 <strike>[NomadBSD Errata](http://nomadbsd.org/download/errata-1.2.txt)</strike> first.
+
+<a name="ts_boot"></a>
+### Boot problems
+<a name="ts_mountroot"></a>
+#### The boot process stops at the *mountroot* prompt
+If you are using a USB 3.X port, try to use a USB 2.X port instead.
 <a name="ts_graphics"></a>
 ### Graphics
 <a name="ts_ati_amd"></a>
