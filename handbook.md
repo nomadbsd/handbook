@@ -30,7 +30,7 @@
 	1. [Resetting NomadBSD](#reset)
 		1. [Limitations](#reset_limits)
 	1. [Disabling the graphics driver menu](#disablegfxmenu)
-	1. [Disabling automatic graphics driver setup](#disableinitgfx)
+	1. [Disabling the automatic graphics driver setup](#disableinitgfx)
 	1. [Installing NomadBSD on a hard disk](#hddinstall)
 	1. [Running NomadBSD in VirtualBox<sup>™</sup>](#vbox)
 	1. [Installing Linux<sup>®</sup> packages](#linuxpkg)
@@ -299,7 +299,7 @@ default driver to use by setting `initgfx_default` to `"scfb"` or `"vesa"` in
 `/etc/rc.conf`.
 
 <a name="disableinitgfx"></a>
-### Disabling automatic graphics driver setup
+### Disabling the automatic graphics driver setup
 If you want to create your own graphics driver settings, you can disable
 `initgfx` by adding
 
