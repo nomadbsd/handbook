@@ -309,6 +309,13 @@ If you want to create your own graphics driver settings, you can disable
 ### Installing NomadBSD on a hard disk
 Start [Openbox menu](#overview) -> *System* -> *NomadBSD Installer* and
 follow the instructions.
+- - -
+
+**Note:** The NomadBSD installer will use the entire disk. Installing to a
+single partition is currently not possible.
+
+- - -
+
 
 ![](images/installer-screenshot.png)
 
