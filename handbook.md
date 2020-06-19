@@ -21,7 +21,7 @@
 		1. [BTRFS, ReiserFS, XFS](#linuxfs)
 1. [Networking](#networking)
 	1. [Wireless Networking](#wifi)
-1. [Graphics](#grafics)
+1. [Graphics](#graphics)
 	1. [Multihead setup](#multihead)
 	1. [Changing display settings](#displaysettings)
 1. [Sound](#sound)
@@ -54,6 +54,7 @@ FreeBSD<sup>®</sup>'s hardware compatibility.
 <a name="installation"></a>
 ## Installation
 
+<a name="choosemedia"></a>
 ### Choosing a USB flash drive
 NomadBSD performs well on USB 2.X flash drives, but writing many small files
 can be very slow. To improve performance, you should consider using a USB 3.X
@@ -61,6 +62,7 @@ flash drive even on a USB 2.X port, as they tend to be faster. See
 [USB 3.0 Flash Drive Roundup](https://www.anandtech.com/show/4523/usb-30-flash-drive-roundup/6). Do not use cheap no-name thumb drives they sell at super markets
 and drug stores. These drives are very slow and unreliable.
 
+<a name="download"></a>
 ### Downloading and writing the image
 Instructions for writing the image to a flash drive from different operating
 systems can be found [here](http://nomadbsd.org/download.html).
@@ -326,7 +328,7 @@ choose *nomadbsd.vmdk* which we created in 3.
 6. Go to *Settings* -> *System* -> *Processor* and set the number of
 processors to 2.
 
-<a href="linuxpkg"></a>
+<a name="linuxpkg"></a>
 ## Installing Linux<sup>®</sup> packages
 
 Before you can install Linux<sup>®</sup> packages it is necessary to enable
