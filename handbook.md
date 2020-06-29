@@ -196,14 +196,14 @@ Unfortunately,
 requires a license from Microsoft<sup>®</sup>, and so it can't be
 pre-installed. You have to build it yourself by using the ports:
 
-        # pkg install autoconf automake
+	# pkg install autoconf automake
 	# mkdir /home/ports
 	# ln -s /home/ports /usr
 	# svnlite co https://svn.freebsd.org/ports/head/Mk /usr/ports/Mk
 	# svnlite co https://svn.freebsd.org/ports/head/Templates /usr/ports/Templates
-        # svnlite co https://svn.freebsd.org/ports/head/sysutils/fusefs-exfat /tmp/fusefs-exfat
-        # cd /tmp/fusefs-exfat
-        # make DISTDIR=/tmp install
+	# svnlite co https://svn.freebsd.org/ports/head/sysutils/fusefs-exfat /tmp/fusefs-exfat
+	# cd /tmp/fusefs-exfat
+	# make DISTDIR=/tmp install
 
 or the [Git repo](https://github.com/relan/exfat.git):
 
@@ -309,6 +309,7 @@ If you want to create your own graphics driver settings, you can disable
 ### Installing NomadBSD on a hard disk
 Start [Openbox menu](#overview) -> *System* -> *NomadBSD Installer* and
 follow the instructions.
+
 - - -
 
 **Note:** The NomadBSD installer will use the entire disk. Installing to a
