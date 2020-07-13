@@ -346,8 +346,8 @@ Before you can install Linux<sup>®</sup> packages it is necessary to enable
 Let's say you want to install <a href="https://freshports.org/editors/linux-sublime">linux-sublime</a>
 you can proceed as follows:
 
-	# kldload linux
 	# sysrc linux_enable=YES
+	# service abi start
 	# pkg install linux-sublime
 
 <a name="troubleshooting"></a>
