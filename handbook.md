@@ -134,6 +134,53 @@ command.
 
 * Paste copied text
 
+`<Ctrl>+<Shift>+T`
+
+* Open a new tab
+
+`<Ctrl>+<Shift>+W`
+
+* Close current tab
+
+`<Alt>+<Left cursor>`
+
+* Previous tab
+
+`<Alt>+<Right cursor>`
+
+* Next tab
+
+`<Alt>+[1-9]`
+
+* Switch to tab N (1-9)
+
+`<Ctrl>+<Shift>+S`
+
+* Toggle scrollbar
+
+`<Ctrl>+<Shift>+<Left mouse button>`
+
+* Open link
+
+`<F11>`
+
+* Fullscreen
+
+`<Shift>+<PageUp>`
+
+* Scroll up one page
+
+`<Shift>+<PageDown>`
+
+* Scroll down on page
+
+`<Ctrl>+<Shift>+<Up>`
+
+* Scroll up one line
+
+`<Ctrl>+<Shift>+<Down>`
+
+* Scroll down one line
 
 <a name="autostart"></a>
 ## Enable/Disable desktop components, and auto-start programs
