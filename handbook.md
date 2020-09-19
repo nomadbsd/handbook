@@ -21,6 +21,7 @@
 		1. [BTRFS, ReiserFS, XFS](#linuxfs)
 1. [Networking](#networking)
 	1. [Wireless Networking](#wifi)
+1. [Installing software packages](#instpkg)
 1. [Graphics](#graphics)
 	1. [Multihead setup](#multihead)
 	1. [Changing display settings](#displaysettings)
@@ -33,6 +34,7 @@
 	1. [Disabling the automatic graphics driver setup](#disableinitgfx)
 	1. [Installing NomadBSD on a hard disk](#hddinstall)
 	1. [Running NomadBSD in VirtualBox<sup>™</sup>](#vbox)
+	1. [Using an alternative window manager](#altwm)
 	1. [Installing Linux<sup>®</sup> packages](#linuxpkg)
 1. [Troubleshooting](#troubleshooting)
 	1. [Errata](#errata)
@@ -199,7 +201,7 @@ Use Drag&Drop to add application icons to the *plank* panel.
 
 <a name="dmconfig"></a>
 ## Display manager settings: Auto login, default user, and theme
-The display manager, [Slim](https://freshports.org/x11/slim), used by NomadBSD
+The display manager, [SLiM](https://freshports.org/x11/slim), used by NomadBSD
 is configured to automatically log in the default user *nomad*. The program
 *nomadbsd-dmconfig* ([Openbox menu](#overview) -> *Settings* -> *Display manager settings*)
 allows you to change/disable the default user, and to enable/disable auto login.
@@ -276,6 +278,14 @@ ReiserFS, and XFS support.
 The program [wifimgr](http://freshports.org/net-mgmt/wifimgr)
 ([Openbox menu](#overview) -> *Network* -> *WiFi Networks Manager*) allows
 you to connect to a wireless network.
+
+<a name="instpkg"></a>
+## Installing software packages
+
+You can install and upgrade software packages with
+[OctoPkg](https://www.freshports.org/ports-mgmt/octopkg)
+([Openbox menu](#overview) -> *System* -> *OctoPkg*) which is a graphical
+front-end to FreeBSD's [pkg](https://www.freebsd.org/doc/handbook/pkgng-intro.html).
 
 <a name="graphics"></a>
 ## Graphics
@@ -384,6 +394,13 @@ choose *nomadbsd.vmdk* which we created in 3.
 5. Go to *Settings* -> *Display* and set the video memory to 128MB or more.
 6. Go to *Settings* -> *System* -> *Processor* and set the number of
 processors to 2.
+
+
+<a name="altwm"></a>
+## Using an alternative window manager
+You can install different window managers and desktop environments on
+NomadBSD. Select the one you want to start by pressing `<F1>` in the
+graphical login manager ([SLiM](https://freshports.org/x11/slim)).
 
 <a name="linuxpkg"></a>
 ## Installing Linux<sup>®</sup> packages
