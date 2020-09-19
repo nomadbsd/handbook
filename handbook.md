@@ -108,81 +108,94 @@ Depending on the size, creating the file system can take several minutes.
 ## Key bindings
 <a name="globalkeybindings"></a>
 ### Global keybindings
-
-`<Alt>+<F2>`
-
-* Open DSBExec to execute a command.
-
-`<Ctrl>+<Alt>+L`
-
-* Lock the screen.
-
-`<Ctrl>+<Space>`
-
-* Open [dmenu-run](https://www.freshports.org/x11/dmenu/) to execute a
-command.
-
-`<Print>`
-
-* Open XFCE 4 screenshooter.
+<table style="width:100%; table-layout:fixed">
+	<tr>
+		<th>Keys</th>
+		<th>Function</th>
+	</tr>
+	<tr>
+		<td>Alt+F2</td>
+		<td>Open DSBExec to execute a command.</td>
+	</tr>
+	<tr>
+		<td>Ctrl+Alt+L</td>
+		<td>Lock the screen.</td>
+	</tr>
+	<tr>
+		<td>Ctrl+Space</td>
+		<td>Open <a href="https://www.freshports.org/x11/dmenu">dmenu-run</a>
+		to execute a command.</td>
+	</tr>
+	<tr>
+		<td>Print</td>
+		<td>Open XFCE 4 screenshooter.</td>
+	</tr>
+</table>
 
 <a name="terminalkeybindings"></a>
 ### Terminal keybindings
-`<Shift>+<Ctrl>+C`
-
-* Copy selected text
-
-`<Shift>+<Ctrl>+V`
-
-* Paste copied text
-
-`<Ctrl>+<Shift>+T`
-
-* Open a new tab
-
-`<Ctrl>+<Shift>+W`
-
-* Close current tab
-
-`<Alt>+<Left cursor>`
-
-* Previous tab
-
-`<Alt>+<Right cursor>`
-
-* Next tab
-
-`<Alt>+[1-9]`
-
-* Switch to tab N (1-9)
-
-`<Ctrl>+<Shift>+S`
-
-* Toggle scrollbar
-
-`<Ctrl>+<Shift>+<Left mouse button>`
-
-* Open link
-
-`<F11>`
-
-* Fullscreen
-
-`<Shift>+<PageUp>`
-
-* Scroll up one page
-
-`<Shift>+<PageDown>`
-
-* Scroll down on page
-
-`<Ctrl>+<Shift>+<Up>`
-
-* Scroll up one line
-
-`<Ctrl>+<Shift>+<Down>`
-
-* Scroll down one line
+<table style="width:100%; table-layout:fixed">
+	<tr>
+		<th>Keys</th>
+		<th>Function</th>
+	</tr>
+	<tr>
+		<td>Shift+Ctrl+C</td>
+		<td>Copy selected text</td>
+	</tr>
+	<tr>
+		<td>Shift+Ctrl+V</td>
+		<td>Paste copied text</td>
+	</tr>
+	<tr>
+		<td>Ctrl+Shift+T</td>
+		<td>Open a new tab</td>
+	</tr>
+	<tr>
+		<td>Ctrl+Shift+W</td>
+		<td>Close current tab</td>
+	</tr>
+	<tr>
+		<td>Alt+Left cursor</td>
+		<td>Previous tab</td>
+	</tr>
+	<tr>
+		<td>Alt+Right cursor</td>
+		<td>Next tab</td>
+	</tr>
+	<tr>
+		<td>Alt+[1-9]</td>
+		<td>Switch to tab N (1-9)</td>
+	</tr>
+	<tr>
+		<td>Ctrl+Shift+S</td>
+		<td>Toggle scrollbar</td>
+	</tr>
+	<tr>
+		<td>Ctrl+Shift+Left mouse button</td>
+		<td>Open link</td>
+	</tr>
+	<tr>
+		<td>F11</td>
+		<td>Fullscreen</td>
+	</tr>
+	<tr>
+		<td>Shift+PageUp</td>
+		<td>Scroll up one page</td>
+	</tr>
+	<tr>
+		<td>Shift+PageDown</td>
+		<td>Scroll down on page</td>
+	</tr>
+	<tr>
+		<td>Ctrl+Shift+Up</td>
+		<td>Scroll up one line</td>
+	</tr>
+	<tr>
+		<td>Ctrl+Shift+Down</td>
+		<td>Scroll down one line</td>
+	</tr>
+</table>
 
 <a name="autostart"></a>
 ## Enable/Disable desktop components, and auto-start programs
