@@ -27,6 +27,7 @@
 	1. [Changing display settings](#displaysettings)
 1. [Sound](#sound)
 	1. [Selecting the default audio device](#defaultaudio)
+1. [Using an alternative window manager](#altwm)
 1. [Advanced Topics](#advanced)
 	1. [Resetting NomadBSD](#reset)
 		1. [Limitations](#reset_limits)
@@ -34,7 +35,6 @@
 	1. [Disabling the automatic graphics driver setup](#disableinitgfx)
 	1. [Installing NomadBSD on a hard disk](#hddinstall)
 	1. [Running NomadBSD in VirtualBox<sup>™</sup>](#vbox)
-	1. [Using an alternative window manager](#altwm)
 	1. [Installing Linux<sup>®</sup> packages](#linuxpkg)
 1. [Troubleshooting](#troubleshooting)
 	1. [Errata](#errata)
@@ -327,6 +327,12 @@ Right-click on the speaker/volume indicator icon in the panel, and choose
 *Default device* tab, select the sound card/device, and click on *Ok*. 
 In order to take effect make sure to restart your audio application(s).
 
+<a name="altwm"></a>
+## Using an alternative window manager
+You can install different window managers and desktop environments on
+NomadBSD. Select the one you want to start by pressing `<F1>` in the
+graphical login manager ([SLiM](https://freshports.org/x11/slim)).
+
 <a name="advanced"></a>
 ## Advanced Topics
 
@@ -408,12 +414,6 @@ choose *nomadbsd.vmdk* which we created in 3.
 6. Go to *Settings* -> *System* -> *Processor* and set the number of
 processors to 2.
 
-
-<a name="altwm"></a>
-## Using an alternative window manager
-You can install different window managers and desktop environments on
-NomadBSD. Select the one you want to start by pressing `<F1>` in the
-graphical login manager ([SLiM](https://freshports.org/x11/slim)).
 
 <a name="linuxpkg"></a>
 ## Installing Linux<sup>®</sup> packages
