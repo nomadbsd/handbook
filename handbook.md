@@ -139,6 +139,14 @@ Depending on the size, creating the file system can take several minutes.
 		<th>Function</th>
 	</tr>
 	<tr>
+		<td>Ctrl++</td>
+		<td>Increase font size</td>
+	</tr>
+	<tr>
+		<td>Ctrl+-</td>
+		<td>Decrease font size</td>
+	</tr>
+	<tr>
 		<td>Shift+Ctrl+C</td>
 		<td>Copy selected text</td>
 	</tr>
