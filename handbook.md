@@ -22,6 +22,7 @@
 1. [Networking](#networking)
 	1. [Wireless Networking](#wifi)
 1. [Installing software packages](#instpkg)
+1. [Installing Linux<sup>®</sup> browsers for watching *Netflix*, *Prime Video*, etc.](#linuxbrowser)
 1. [Graphics](#graphics)
 	1. [Multihead setup](#multihead)
 	1. [Changing display settings](#displaysettings)
@@ -305,6 +306,13 @@ You can install and upgrade software packages with
 [OctoPkg](https://www.freshports.org/ports-mgmt/octopkg)
 ([Openbox menu](#overview) → *System* → *OctoPkg*) which is a graphical
 front-end to FreeBSD's [pkg](https://www.freebsd.org/doc/handbook/pkgng-intro.html).
+
+<a name="linuxbrowser"></a>
+## Installing Linux<sup>®</sup> browsers for watching *Netflix*, *Prime Video*, etc.
+The program *lbi-gui* ([Openbox menu](#overview) → *Network* → *Linux Browser Installer GUI*)
+allows you to install [*Widevine*](https://en.wikipedia.org/wiki/Widevine) capable Linux versions of the
+[Chromium](https://www.chromium.org/Home) and [Brave](https://brave.com/)
+browser.
 
 <a name="graphics"></a>
 ## Graphics
