@@ -18,7 +18,7 @@
 	1. [Automount](#automount)
 	1. [Extending filesystem support](#fssupport)
 		1. [exFat](#exfat)
-		1. [BTRFS, ReiserFS, XFS](#linuxfs)
+		1. [BTRFS and XFS](#linuxfs)
 1. [Networking](#networking)
 	1. [Wireless Networking](#wifi)
 1. [Installing software packages](#instpkg)
@@ -284,10 +284,10 @@ or the [Git repo](https://github.com/relan/exfat.git):
 	# make && make install
 
 <a name="linuxfs"></a>
-#### BTRFS, ReiserFS, XFS
+#### BTRFS and XFS
 Install the package
-[fusefs-lkl](https://www.freshports.org/sysutils/fusefs-lkl) for BTRFS,
-ReiserFS, and XFS support.
+[fusefs-lkl](https://www.freshports.org/sysutils/fusefs-lkl) for BTRFS
+and XFS support.
 
 	# pkg install fusefs-lkl
 
