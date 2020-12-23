@@ -31,7 +31,6 @@
 1. [Advanced Topics](#advanced)
 	1. [Resetting NomadBSD](#reset)
 		1. [Limitations](#reset_limits)
-	1. [Disabling the graphics driver menu](#disablegfxmenu)
 	1. [Disabling the automatic graphics driver setup](#disableinitgfx)
 	1. [Installing NomadBSD on a hard disk](#hddinstall)
 	1. [Running NomadBSD in VirtualBox<sup>™</sup>](#vbox)
@@ -200,7 +199,7 @@ Depending on the size, creating the file system can take several minutes.
 <a name="autostart"></a>
 ## Enable/Disable desktop components, and auto-start programs
 The program [DSBAutostart](http://freshports.org/sysutils/dsbautostart)
-([Openbox menu](#overview) -> *Settings* -> *Autostart Settings*) allows you to control which
+([Openbox menu](#overview) → *Settings* → *Autostart Settings*) allows you to control which
 programs are automatically executed when the graphical interface starts.
 Further, it allows you to enable/disable some components of the NomadBSD
 desktop. The changes take place after logging out and in again.
@@ -216,7 +215,7 @@ Use Drag&Drop to add application icons to the *plank* panel.
 ## Display manager settings: Auto login, default user, and theme
 The display manager, [SLiM](https://freshports.org/x11/slim), used by NomadBSD
 is configured to automatically log in the default user *nomad*. The program
-*nomadbsd-dmconfig* ([Openbox menu](#overview) -> *Settings* -> *Display manager settings*)
+*nomadbsd-dmconfig* ([Openbox menu](#overview) → *Settings* → *Display manager settings*)
 allows you to change/disable the default user, and to enable/disable auto login.
 Furthermore, it lets you change the theme. If you want to add a new theme, copy
 the theme's directory to */usr/local/share/slim/themes/*. To see a preview
@@ -227,7 +226,7 @@ in *nomadbsd-dmconfig* copy a screenshot of the login screen to
 <a name="adduser"></a>
 ## Adding a preconfigured user account
 If you want to add a further preconfigured user account use
-*nomadbsd-adduser* ([Openbox menu](#overview) -> *System* -> *Add user*).
+*nomadbsd-adduser* ([Openbox menu](#overview) → *System* → *Add user*).
 Since NomadBSD is configured to automatically log in the user *nomad* you
 need to change that behaviour in order to be able to log in as another
 user. See [*nomadbsd-dmconfig*](#dmconfig).
@@ -289,7 +288,7 @@ ReiserFS, and XFS support.
 <a name="wifi"></a>
 ### Wireless Networking
 The program [wifimgr](http://freshports.org/net-mgmt/wifimgr)
-([Openbox menu](#overview) -> *Network* -> *WiFi Networks Manager*) allows
+([Openbox menu](#overview) → *Network* → *WiFi Networks Manager*) allows
 you to connect to a wireless network.
 
 <a name="instpkg"></a>
@@ -297,7 +296,7 @@ you to connect to a wireless network.
 
 You can install and upgrade software packages with
 [OctoPkg](https://www.freshports.org/ports-mgmt/octopkg)
-([Openbox menu](#overview) -> *System* -> *OctoPkg*) which is a graphical
+([Openbox menu](#overview) → *System* → *OctoPkg*) which is a graphical
 front-end to FreeBSD's [pkg](https://www.freebsd.org/doc/handbook/pkgng-intro.html).
 
 <a name="graphics"></a>
@@ -306,13 +305,13 @@ front-end to FreeBSD's [pkg](https://www.freebsd.org/doc/handbook/pkgng-intro.ht
 ### Multihead setup
 By default, NomadBSD enables all connected outputs (monitors). The tool
 [ArandR](http://freshports.org/x11/arandr)
-([Openbox menu](#overview)-> *Settings* -> *ArandR*) allows you to configure
+([Openbox menu](#overview)→ *Settings* → *ArandR*) allows you to configure
 the position, resolution, etc. of your monitors. Save your changes to
 `~/.screenlayout/default.sh` which is automatically executed on session start.
 
 <a name="displaysettings"></a>
 ### Changing display settings
-The program ([Openbox menu](#overview)-> *Settings* -> *Display Settings*)
+The program ([Openbox menu](#overview)→ *Settings* → *Display Settings*)
 allows you to change the brightness, gamma, screen mode, display power management
 (DPMS) settings, etc.
 
@@ -364,16 +363,6 @@ If you have modified or deleted system files from directory trees other than
 `/home`, `/private`, `/etc`, `/var`, `/root`, `/tmp`, and `/usr.local.etc`,
 you might not be able to cleanly reset NomadBSD.
 
-<a name="disablegfxmenu"></a>
-### Disabling the graphics driver menu
-If you want to disable the graphics driver menu, add
-
-`initgfx_menu="NO"` to `/etc/rc.conf`.
-
-By default, `initgfx` will try autodetection, but you can instead define a
-default driver to use by setting `initgfx_default` to `"scfb"` or `"vesa"` in
-`/etc/rc.conf`.
-
 <a name="disableinitgfx"></a>
 ### Disabling the automatic graphics driver setup
 If you want to create your own graphics driver settings, you can disable
@@ -383,7 +372,7 @@ If you want to create your own graphics driver settings, you can disable
 
 <a name="hddinstall"></a>
 ### Installing NomadBSD on a hard disk
-Start [Openbox menu](#overview) -> *System* -> *NomadBSD Installer* and
+Start [Openbox menu](#overview) → *System* → *NomadBSD Installer* and
 follow the instructions.
 
 - - -
@@ -410,8 +399,8 @@ partition, but since we intend to run it from an image file, we increase the
 choose *nomadbsd.vmdk* which we created in 3.
 ![](images/create-vbox-machine.png)
 
-5. Go to *Settings* -> *Display* and set the video memory to 128MB or more.
-6. Go to *Settings* -> *System* -> *Processor* and set the number of
+5. Go to *Settings* → *Display* and set the video memory to 128MB or more.
+6. Go to *Settings* → *System* → *Processor* and set the number of
 processors to 2.
 
 
