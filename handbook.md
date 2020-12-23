@@ -83,26 +83,28 @@ Depending on the size, creating the file system can take several minutes.
 ## Overview
 ![](images/nomadbsd-overview.png)
 
-1. [Openbox](http://freshports/x11-wm/openbox) menu. You can reach it by
+1. [Openbox](https://freshports/x11-wm/openbox) menu. You can reach it by
 	pressing the Windows<sup>®</sup> key (or Super key)/⌘ key
 	(Mac<sup>®</sup>), or by right-clicking on the background image
 	(root window).
-2. [DSBBatmon](http://freshports.org/sysutils/dsbbatmon). By hovering over
+2. [DSBBatmon](https://freshports.org/sysutils/dsbbatmon). By hovering over
 	the icon you can see the battery's current status and charge. Clicking
 	on it brings up the configuration menu.
-3. [DSBMixer](http://freshports.org/audio/dsbmixer). By hovering over the
+3. [DSBMixer](https://freshports.org/audio/dsbmixer). By hovering over the
 	icon you can see the current volume of the master
 	channel. Using the mouse wheel on it lets you change the
 	master volume. Clicking on it brings up the main window of
 	[DSBMixer](http://freshports.org/audio/dsbmixer).
-4. [DSBMC](http://freshports.org/sysutils/dsbmc). Clicking on the icon brings
+4. [DSBMC](https://freshports.org/sysutils/dsbmc). Clicking on the icon brings
 	up the main window in which you	can see all the mountable storage devices
 	attached to the system. Use	the context menu of the device icons to select
 	an action (un/mounting,	opening, playing, ejecting) or double click to
 	mount and open the device in your default file manager. You can use the
 	preferences menu to change the file manager, autoplay setting, and
 	multimedia programs.
-5. Date and time. Clicking in that area brings up a calendar.
+5. [NetworkMgr](https://www.freshports.org/net-mgmt/networkmgr). Clicking on the
+	icon shows the menu from which you can connect to wireless networks.
+6. Date and time. Clicking in that area brings up a calendar.
 
 <a name="keybindings"></a>
 ## Key bindings
