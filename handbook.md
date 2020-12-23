@@ -295,9 +295,8 @@ ReiserFS, and XFS support.
 ## Networking
 <a name="wifi"></a>
 ### Wireless Networking
-The program [wifimgr](http://freshports.org/net-mgmt/wifimgr)
-([Openbox menu](#overview) → *Network* → *WiFi Networks Manager*) allows
-you to connect to a wireless network.
+The program [networkmgr](http://freshports.org/net-mgmt/networkmgr), which
+runs in the tray, allows you to connect to a wireless network.
 
 <a name="instpkg"></a>
 ## Installing software packages
