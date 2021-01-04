@@ -269,8 +269,6 @@ requires a license from Microsoft<sup>®</sup>, and so it can't be
 pre-installed. You have to build it yourself by using the ports:
 
 	# pkg install autoconf automake
-	# mkdir /home/ports
-	# ln -s /home/ports /usr
 	# svnlite co https://svn.freebsd.org/ports/head/Mk /usr/ports/Mk
 	# svnlite co https://svn.freebsd.org/ports/head/Templates /usr/ports/Templates
 	# svnlite co https://svn.freebsd.org/ports/head/sysutils/fusefs-exfat /tmp/fusefs-exfat
