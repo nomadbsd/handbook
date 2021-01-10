@@ -403,21 +403,33 @@ single partition is currently not possible.
 <a name="vbox"></a>
 ### Running NomadBSD in Virtualbox<sup>™</sup>
 1. [Download and extract](http://nomadbsd.org/download.html) an image you intend to run.
-2. NomadBSD will use the remaining space on a USB flash drive for its `/home`
-partition, but since we intend to run it from an image file, we increase the
-(potential) size of the image as follows:
-`truncate -s +4G nomadbsd-x.y.z.img`. If you need more or less extra space, change the
-`-s` parameter accordingly.
-3. Create a vmdk file: `VBoxManage internalcommands createrawvmdk -filename ~/nomadbsd.vmdk -rawdisk /full/path/to/nomadbsd-x.y.z.img`
+2. Create a virtual harddisk (VDI) from the image:
+
+		VBoxManage convertfromraw nomadbsd-x.y.z.img \
+			nomadbsd-x.y.z.vdi --format VDI
+
+3. Change the size of the virtual harddisk, so that you have enough space to
+store files, and install packages. NomadBSD's base system requires approx. 4 GB,
+so resizing the VDI to 8 GB (8000 MB), which is the minimum recommended size,
+will give you about 4 GB for your files.
+
+		VBoxManage modifyhd nomadbsd-x.y.z.vdi --resize 8000
+
+	- - -
+	
+	**Note**: Increasing the size of the VDI after running the NomadBSD
+	setup will not have any effect on NomadBSD's filesystem capacity.
+	
+	- - -
+
 4. Start VirtualBox<sup>™</sup>, and create a new virtual machine. Select
 *Use an existing virtual hard disk file* in the *Hard disk* settings, and
-choose *nomadbsd.vmdk* which we created in 3.
+choose *nomadbsd-x.y.z.vdi* which we created in 2.
 ![](images/create-vbox-machine.png)
 
 5. Go to *Settings* → *Display* and set the video memory to 128MB or more.
 6. Go to *Settings* → *System* → *Processor* and set the number of
 processors to 2.
-
 
 <a name="linuxpkg"></a>
 ## Installing Linux<sup>®</sup> packages
