@@ -76,7 +76,7 @@ systems can be found [here](http://nomadbsd.org/download.html).
 When you boot NomadBSD for the first time, it will run the setup wizard which
 allows you to set your locale, timezone, keyboard settings, password,
 encryption, and default applications. The setup creates a new partition for
-the `/home` directory which uses the remaining space on the storage device.
+the `/data` directory which uses the remaining space on the storage device.
 Depending on the size, creating the file system can take several minutes.
 
 <a name="overview"></a>
