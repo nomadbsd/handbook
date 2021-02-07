@@ -250,6 +250,10 @@ NTFS, Ext2/3/4). You can mount storage devices via
 which is a graphical client for [DSBMD](http://freshports.org/sysutils/dsbmd).
 <a name="automount"></a>
 ### Automount
+You can enable automount in [DSBMC](http://freshports.org/sysutils/dsbmc) under
+*File* → *Preferences* → *Automatically mount devices*
+
+Alternatively, you can use [dsbmc-cli](http://freshports.org/sysutils/dsbmc):
 Execute the command `dsbmc-cli -a` to automount all currently connected
 storage devices, and to enable automounting on devices attached later to the
 system. To start this command automatically on session start, open
