@@ -41,6 +41,7 @@
 	1. [Boot process](#ts_boot)
 		1. [The boot process stops at the *mountroot* prompt](#ts_mountroot)
 	1. [Graphics](#ts_graphics)
+		1. [Automatic graphics card detection crashes the system](#ts_gfxdetect_crash)
 		1. [ATI/AMD](#ts_ati_amd)
 		1. [NVIDIA](#ts_nvidia)
 		1. [Distorted/squished EFI framebuffer screen](#efifb)
@@ -461,6 +462,12 @@ If you experience any problems, consult the
 If you are using a USB 3.X port, try to use a USB 2.X port instead.
 <a name="ts_graphics"></a>
 ### Graphics
+<a name="ts_gfxdetect_crash"></a>
+#### Automatic graphics card detection crashes the system
+If the graphics driver detection crashes the system, you can use a
+non-accelerated fallback driver (VESA or SCFB) by disabling the automatic
+detection in the boot menu. Press `g` or `7` to toggle it.
+
 <a name="ts_ati_amd"></a>
 #### ATI/AMD
 If you are booting a system with ATI/AMD graphics via UEFI, you might
