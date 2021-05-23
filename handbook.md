@@ -453,7 +453,7 @@ you can proceed as follows:
 <a name="errata"></a>
 ### Errata
 If you experience any problems, consult the
-<strike>[NomadBSD Errata](http://nomadbsd.org/download/errata-1.2.txt)</strike> first.
+[NomadBSD Errata](https://nomadbsd.org/errata-130R-20210508.html) first.
 
 <a name="ts_boot"></a>
 ### Boot problems
