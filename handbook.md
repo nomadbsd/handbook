@@ -466,7 +466,12 @@ If you are using a USB 3.X port, try to use a USB 2.X port instead.
 #### Automatic graphics card detection crashes the system
 If the graphics driver detection crashes the system, you can use a
 non-accelerated fallback driver (VESA or SCFB) by disabling the automatic
-detection in the boot menu. Press `g` or `7` to toggle it.
+detection in the boot menu:
+
+1. (Re)boot and enter the boot submenu `Boot Options` (`7`).
+2. Change `Disable automatic Graphics detection` to `On` by pressing the key
+matching the item number.
+3. Go back to main menu, and press `<Enter>` to boot.
 
 <a name="ts_ati_amd"></a>
 #### ATI/AMD
@@ -478,7 +483,7 @@ isn't able to start the X window system.
 
 Try the following workaround:
 
-1. (Re)boot and enter the boot submenu `Boot Options` (`6`).
+1. (Re)boot and enter the boot submenu `Boot Options` (`7`).
 2. Change `Disable syscons` to `On` by pressing the key matching the item
 number.
 3. Go back to main menu, and press `<Enter>` to boot.
