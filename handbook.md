@@ -315,9 +315,8 @@ front-end to FreeBSD's [pkg](https://www.freebsd.org/doc/handbook/pkgng-intro.ht
 <a name="linuxbrowser"></a>
 ## Installing Linux<sup>®</sup> browsers for watching *Netflix*, *Prime Video*, etc.
 The program *lbi-gui* ([Openbox menu](#overview) → *Network* → *Linux Browser Installer GUI*)
-allows you to install [*Widevine*](https://en.wikipedia.org/wiki/Widevine) capable Linux versions of the
-[Chromium](https://www.chromium.org/Home) and [Brave](https://brave.com/)
-browser.
+allows you to install [*Widevine*](https://en.wikipedia.org/wiki/Widevine)
+capable Linux browsers.
 
 <a name="graphics"></a>
 ## Graphics
