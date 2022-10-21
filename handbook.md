@@ -30,7 +30,7 @@
 	1. [Selecting the default audio device](#defaultaudio)
 1. [Using an alternative window manager](#altwm)
 1. [Advanced Topics](#advanced)
-	1. [Resetting NomadBSD](#reset)
+	1. [Resetting NomadBSD (UFS version only)](#reset)
 		1. [Limitations](#reset_limits)
 	1. [Disabling the automatic graphics driver setup](#disableinitgfx)
 	1. [Installing NomadBSD on a hard disk](#hddinstall)
@@ -356,7 +356,7 @@ graphical login manager ([SLiM](https://freshports.org/x11/slim)).
 ## Advanced Topics
 
 <a name="reset"></a>
-### Resetting NomadBSD
+### Resetting NomadBSD (UFS version only)
 
 If you are a tester, or your experiments with the systems left a total mess,
 you might want to reset NomadBSD.
