@@ -76,9 +76,11 @@ systems can be found [here](http://nomadbsd.org/download.html).
 ## The NomadBSD setup
 When you boot NomadBSD for the first time, it will run the setup wizard which
 allows you to set your locale, timezone, keyboard settings, password,
-encryption, and default applications. The setup creates a new partition for
-the `/data` directory which uses the remaining space on the storage device.
-Depending on the size, creating the file system can take several minutes.
+encryption, and default applications. The setup of the UFS version creates a
+new partition for the `/data` directory which uses the remaining space on the
+storage device. Depending on the size, creating the file system can take
+several minutes. The setup of the ZFS version expands the pool to the
+remaining space of the storage device.
 
 <a name="overview"></a>
 ## Overview
