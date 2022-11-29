@@ -84,7 +84,7 @@ remaining space of the storage device.
 
 <a name="overview"></a>
 ## Overview
-![](images/nomadbsd-overview.png)
+![Overview](images/nomadbsd-overview.png)
 
 1. [Openbox](https://freshports/x11-wm/openbox) menu. You can reach it by
 	pressing the Windows<sup>®</sup> key (or Super key)/⌘ key
@@ -221,7 +221,7 @@ programs are automatically executed when the graphical interface starts.
 Further, it allows you to enable/disable some components of the NomadBSD
 desktop. The changes take place after logging out and in again.
 
-![](images/dsbautostart-screenshot.png)
+![DSBAutostart](images/dsbautostart-screenshot.png)
 <a name="plank"></a>
 ## Adding applications to the *plank* panel
 Open your preferred graphical file manager, and navigate to `/usr/local/share/applications`.
@@ -240,7 +240,7 @@ If you want to add a new theme, copy the theme's directory to
 a screenshot of the login screen to
 */usr/local/share/sddm/themes/your-theme-name/your-theme-name.jpg*.
 
-![](images/nomadbsd-dmconfig-screenshot.png)
+![NomadBSD Display Manager Settings](images/nomadbsd-dmconfig-screenshot.png)
 <a name="adduser"></a>
 ## Adding a preconfigured user account
 If you want to add a further preconfigured user account use
@@ -340,7 +340,7 @@ The program ([Openbox menu](#overview)→ *Settings* → *Display Settings*)
 allows you to change the brightness, gamma, screen mode, display power management
 (DPMS) settings, etc.
 
-![](images/dsbdisplaysettings-screenshot.png)
+![NomadBSD Display Settings](images/dsbdisplaysettings-screenshot.png)
 
 <a name="sound"></a>
 ## Sound
@@ -408,7 +408,7 @@ single partition is currently not possible.
 - - -
 
 
-![](images/installer-screenshot.png)
+![NomadBSD Installation Wizard](images/installer-screenshot.png)
 
 <a name="vbox"></a>
 ### Running NomadBSD in Virtualbox<sup>™</sup>
@@ -435,7 +435,7 @@ will give you about 4 GB for your files.
 4. Start VirtualBox<sup>™</sup>, and create a new virtual machine. Select
 *Use an existing virtual hard disk file* in the *Hard disk* settings, and
 choose *nomadbsd-x.y.z.vdi* which we created in 2.
-![](images/create-vbox-machine.png)
+![NomadBSD Create Virtual Machine](images/create-vbox-machine.png)
 
 5. Go to *Settings* → *Display* and set the video memory to 128MB or more.
 6. Go to *Settings* → *System* → *Processor* and set the number of
