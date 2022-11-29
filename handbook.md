@@ -91,21 +91,24 @@ Depending on the size, creating the file system can take several minutes.
 2. [DSBBatmon](https://freshports.org/sysutils/dsbbatmon). By hovering over
 	the icon you can see the battery's current status and charge. Clicking
 	on it brings up the configuration menu.
-3. [DSBMixer](https://freshports.org/audio/dsbmixer). By hovering over the
-	icon you can see the current volume of the master
-	channel. Using the mouse wheel on it lets you change the
-	master volume. Clicking on it brings up the main window of
-	[DSBMixer](http://freshports.org/audio/dsbmixer).
-4. [DSBMC](https://freshports.org/sysutils/dsbmc). Clicking on the icon brings
+3. [DSBMC](https://freshports.org/sysutils/dsbmc). Clicking on the icon brings
 	up the main window in which you	can see all the mountable storage devices
 	attached to the system. Use	the context menu of the device icons to select
 	an action (un/mounting,	opening, playing, ejecting) or double click to
 	mount and open the device in your default file manager. You can use the
 	preferences menu to change the file manager, autoplay setting, and
 	multimedia programs.
-5. [NetworkMgr](https://www.freshports.org/net-mgmt/networkmgr). Clicking on the
+4. [DSBMixer](https://freshports.org/audio/dsbmixer). By hovering over the
+	icon you can see the current volume of the master
+	channel. Using the mouse wheel on it lets you change the
+	master volume. Clicking on it brings up the main window of
+	[DSBMixer](http://freshports.org/audio/dsbmixer).
+5. [Keyboard Layout Settings](https://www.freshports.org/textproc/ibus).
+	Left-Clicking on the icon opens a menu to switch between keyboard
+	layouts. Right-Clicking opens the menu for settings.
+6. [NetworkMgr](https://www.freshports.org/net-mgmt/networkmgr). Clicking on the
 	icon shows the menu from which you can connect to wireless networks.
-6. Date and time. Clicking in that area brings up a calendar.
+7. Date and time. Clicking in that area brings up a calendar.
 
 <a name="keybindings"></a>
 ## Key bindings
