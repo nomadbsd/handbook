@@ -87,6 +87,8 @@ ol ol {
 
 img {
 	margin-bottom: 14px;
+        max-width: 100%;
+        height: auto;
 }
 
 table tr p td {
