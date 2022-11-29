@@ -228,14 +228,15 @@ Use Drag&Drop to add application icons to the *plank* panel.
 
 <a name="dmconfig"></a>
 ## Display manager settings: Auto login, default user, and theme
-The display manager, [SLiM](https://freshports.org/x11/slim), used by NomadBSD
+The display manager, [SDDM](https://freshports.org/x11/sddm), used by NomadBSD
 is configured to automatically log in the default user *nomad*. The program
 *nomadbsd-dmconfig* ([Openbox menu](#overview) → *Settings* → *Display manager settings*)
-allows you to change/disable the default user, and to enable/disable auto login.
-Furthermore, it lets you change the theme. If you want to add a new theme, copy
-the theme's directory to */usr/local/share/slim/themes/*. To see a preview
-in *nomadbsd-dmconfig* copy a screenshot of the login screen to
-*/usr/local/share/slim/themes/your-theme-name/preview.png*.
+allows you to change/disable the default user, select the default session, and
+to enable/disable auto login. Furthermore, it lets you change the theme.
+If you want to add a new theme, copy the theme's directory to
+*/usr/local/share/sddm/themes/*. To see a preview in *nomadbsd-dmconfig* copy
+a screenshot of the login screen to
+*/usr/local/share/sddm/themes/your-theme-name/your-theme-name.jpg*.
 
 ![](images/nomadbsd-dmconfig-screenshot.png)
 <a name="adduser"></a>
@@ -351,8 +352,8 @@ In order to take effect make sure to restart your audio application(s).
 <a name="altwm"></a>
 ## Using an alternative window manager
 You can install different window managers and desktop environments on
-NomadBSD. Select the one you want to start by pressing `<F1>` in the
-graphical login manager ([SLiM](https://freshports.org/x11/slim)).
+NomadBSD. Select the one you want to start by selecting from the sessions
+menu at the graphical login manager ([SDDM](https://freshports.org/x11/sddm)).
 
 <a name="advanced"></a>
 ## Advanced Topics
