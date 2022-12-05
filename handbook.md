@@ -86,7 +86,7 @@ remaining space of the storage device.
 ## Overview
 ![Overview](images/nomadbsd-overview.png)
 
-1. [Openbox](https://freshports/x11-wm/openbox) menu. You can reach it by
+1. [Openbox](https://freshports.org/x11-wm/openbox) menu. You can reach it by
 	pressing the Windows<sup>®</sup> key (or Super key)/⌘ key
 	(Mac<sup>®</sup>), or by right-clicking on the background image
 	(root window).
