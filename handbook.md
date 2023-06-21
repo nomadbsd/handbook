@@ -10,6 +10,7 @@
 1. [Key bindings](#keybindings)
 	1. [Global keybindings](#globalkeybindings)
 	1. [Terminal keybindings](#terminalkeybindings)
+	1. [IBus keybindings](#ibuskeybindings)
 1. [Enable/Disable desktop components, and auto-start programs](#autostart)
 1. [Adding applications to the *plank* panel](#plank)
 1. [Display manager settings: Auto login, default user, and theme](#dmconfig)
@@ -210,6 +211,31 @@ remaining space of the storage device.
 	<tr>
 		<td>Ctrl+Shift+Down</td>
 		<td>Scroll down one line</td>
+	</tr>
+</table>
+
+<a name="ibuskeybindings"></a>
+### IBus keybindings
+<table style="width:100%; table-layout:fixed">
+	<tr>
+		<th>Keys</th>
+		<th>Function</th>
+	</tr>
+	<tr>
+		<td>Ctrl+Super+period</td>
+		<td>Lets you insert an emoji at the current cursor
+		position by typing its annotation followed by space.
+		Hitting space without annotation text will open the
+		emoji menu.</td>
+	</tr>
+	<tr>
+		<td>Ctrl+Super+space</td>
+		<td>Switch input method.</td>
+	</tr>
+	<tr>
+		<td>Ctrl+Shift+u</td>
+		<td>Insert a unicode character at the current cursor
+		position by entering its code.</td>
 	</tr>
 </table>
 
