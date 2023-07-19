@@ -226,7 +226,7 @@ remaining space of the storage device.
 		<td>Lets you insert an emoji at the current cursor
 		position by typing its annotation followed by space.
 		Hitting space without annotation text will open the
-		emoji menu.</td>
+		emoji menu. <b>This feature is broken in ibus-1.5.27_2</b></td>
 	</tr>
 	<tr>
 		<td>Ctrl+Super+space</td>
