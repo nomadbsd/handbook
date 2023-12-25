@@ -11,7 +11,6 @@
 	1. [Global keybindings](#globalkeybindings)
 	1. [Terminal keybindings](#terminalkeybindings)
 	1. [IBus keybindings](#ibuskeybindings)
-1. [Enable/Disable desktop components, and auto-start programs](#autostart)
 1. [Adding applications to the *plank* panel](#plank)
 1. [Display manager settings: Auto login, default user, and theme](#dmconfig)
 1. [Adding a preconfigured user account](#adduser)
@@ -24,9 +23,6 @@
 	1. [Wireless Networking](#wifi)
 1. [Installing software packages](#instpkg)
 1. [Installing Linux<sup>®</sup> browsers for watching *Netflix*, *Prime Video*, etc.](#linuxbrowser)
-1. [Graphics](#graphics)
-	1. [Multihead setup](#multihead)
-	1. [Changing display settings](#displaysettings)
 1. [Sound](#sound)
 	1. [Selecting the default audio device](#defaultaudio)
 1. [Using an alternative window manager](#altwm)
@@ -87,31 +83,30 @@ remaining space of the storage device.
 ## Overview
 ![Overview](images/nomadbsd-overview.png)
 
-1. [Openbox](https://freshports.org/x11-wm/openbox) menu. You can reach it by
-	pressing the Windows<sup>®</sup> key (or Super key)/⌘ key
-	(Mac<sup>®</sup>), or by right-clicking on the background image
-	(root window).
-2. [DSBBatmon](https://freshports.org/sysutils/dsbbatmon). By hovering over
-	the icon you can see the battery's current status and charge. Clicking
-	on it brings up the configuration menu.
-3. [DSBMC](https://freshports.org/sysutils/dsbmc). Clicking on the icon brings
-	up the main window in which you	can see all the mountable storage devices
-	attached to the system. Use	the context menu of the device icons to select
-	an action (un/mounting,	opening, playing, ejecting) or double click to
-	mount and open the device in your default file manager. You can use the
-	preferences menu to change the file manager, autoplay setting, and
-	multimedia programs.
-4. [DSBMixer](https://freshports.org/audio/dsbmixer). By hovering over the
-	icon you can see the current volume of the master
-	channel. Using the mouse wheel on it lets you change the
-	master volume. Clicking on it brings up the main window of
-	[DSBMixer](http://freshports.org/audio/dsbmixer).
-5. [Keyboard Layout Settings](https://www.freshports.org/textproc/ibus).
-	Left-Clicking on the icon opens a menu to switch between keyboard
-	layouts. Right-Clicking opens the menu for settings.
-6. [NetworkMgr](https://www.freshports.org/net-mgmt/networkmgr). Clicking on the
-	icon shows the menu from which you can connect to wireless networks.
-7. Date and time. Clicking in that area brings up a calendar.
+1. [Keyboard Layout Settings](https://www.freshports.org/textproc/ibus).
+Left-Clicking on the icon opens a menu to switch between keyboard
+layouts. Right-Clicking opens the menu for settings.
+
+2. [NetworkMgr](https://www.freshports.org/net-mgmt/networkmgr). Clicking on the
+icon shows the menu from which you can connect to wireless networks.
+
+3. [DSBMixer](https://freshports.org/audio/dsbmixer). By hovering over the
+icon you can see the current volume of the master
+channel. Using the mouse wheel on it lets you change the
+master volume. Clicking on it brings up the main window of
+[DSBMixer](http://freshports.org/audio/dsbmixer).
+
+4. [DSBMC](https://freshports.org/sysutils/dsbmc). Clicking on the icon brings
+up the main window in which you	can see all the mountable storage devices
+attached to the system. Use	the context menu of the device icons to select
+an action (un/mounting,	opening, playing, ejecting) or double click to
+mount and open the device in your default file manager. You can use the
+preferences menu to change the file manager, autoplay setting, and
+multimedia programs.
+
+5. Battery monitor.
+
+6. Date and time. Clicking in that area brings up a calendar.
 
 <a name="keybindings"></a>
 ## Key bindings
@@ -129,11 +124,6 @@ remaining space of the storage device.
 	<tr>
 		<td>Ctrl+Alt+L</td>
 		<td>Lock the screen.</td>
-	</tr>
-	<tr>
-		<td>Ctrl+Space</td>
-		<td>Open <a href="https://www.freshports.org/x11/dmenu">dmenu-run</a>
-		to execute a command.</td>
 	</tr>
 	<tr>
 		<td>Print</td>
@@ -239,15 +229,6 @@ remaining space of the storage device.
 	</tr>
 </table>
 
-<a name="autostart"></a>
-## Enable/Disable desktop components, and auto-start programs
-The program [DSBAutostart](http://freshports.org/sysutils/dsbautostart)
-([Openbox menu](#overview) → *Settings* → *Autostart Settings*) allows you to control which
-programs are automatically executed when the graphical interface starts.
-Further, it allows you to enable/disable some components of the NomadBSD
-desktop. The changes take place after logging out and in again.
-
-![DSBAutostart](images/dsbautostart-screenshot.png)
 <a name="plank"></a>
 ## Adding applications to the *plank* panel
 Open your preferred graphical file manager, and navigate to `/usr/local/share/applications`.
@@ -258,7 +239,7 @@ Use Drag&Drop to add application icons to the *plank* panel.
 ## Display manager settings: Auto login, default user, and theme
 The display manager, [SDDM](https://freshports.org/x11/sddm), used by NomadBSD
 is configured to automatically log in the default user *nomad*. The program
-*nomadbsd-dmconfig* ([Openbox menu](#overview) → *Settings* → *Display manager settings*)
+*nomadbsd-dmconfig* (*main menu* → *Settings Manager* → *Display manager settings*)
 allows you to change/disable the default user, select the default session, and
 to enable/disable auto login. Furthermore, it lets you change the theme.
 If you want to add a new theme, copy the theme's directory to
@@ -270,7 +251,7 @@ a screenshot of the login screen to
 <a name="adduser"></a>
 ## Adding a preconfigured user account
 If you want to add a further preconfigured user account use
-*nomadbsd-adduser* ([Openbox menu](#overview) → *System* → *Add user*).
+*nomadbsd-adduser* (*main menu* → *Settings Manager* → *Add user*).
 Since NomadBSD is configured to automatically log in the user *nomad* you
 need to change that behaviour in order to be able to log in as another
 user. See [*nomadbsd-dmconfig*](#dmconfig).
@@ -341,32 +322,14 @@ runs in the tray, allows you to connect to wireless networks.
 
 You can install and upgrade software packages with
 [OctoPkg](https://www.freshports.org/ports-mgmt/octopkg)
-([Openbox menu](#overview) → *System* → *OctoPkg*) which is a graphical
+(*main menu* → *System* → *OctoPkg*) which is a graphical
 front-end to FreeBSD's [pkg](https://www.freebsd.org/doc/handbook/pkgng-intro.html).
 
 <a name="linuxbrowser"></a>
 ## Installing Linux<sup>®</sup> browsers for watching *Netflix*, *Prime Video*, etc.
-The program *lbi-gui* ([Openbox menu](#overview) → *Network* → *Linux Browser Installer GUI*)
+The program *lbi-gui* (*main menu* → *Network* → *Linux Browser Installer GUI*)
 allows you to install [*Widevine*](https://en.wikipedia.org/wiki/Widevine)
 capable Linux browsers.
-
-<a name="graphics"></a>
-## Graphics
-<a name="multihead"></a>
-### Multihead setup
-By default, NomadBSD enables all connected outputs (monitors). The tool
-[ArandR](http://freshports.org/x11/arandr)
-([Openbox menu](#overview)→ *Settings* → *ArandR*) allows you to configure
-the position, resolution, etc. of your monitors. Save your changes to
-`~/.screenlayout/default.sh` which is automatically executed on session start.
-
-<a name="displaysettings"></a>
-### Changing display settings
-The program ([Openbox menu](#overview)→ *Settings* → *Display Settings*)
-allows you to change the brightness, gamma, screen mode, display power management
-(DPMS) settings, etc.
-
-![NomadBSD Display Settings](images/dsbdisplaysettings-screenshot.png)
 
 <a name="sound"></a>
 ## Sound
@@ -423,7 +386,7 @@ If you want to create your own graphics driver settings, you can disable
 
 <a name="hddinstall"></a>
 ### Installing NomadBSD on a hard disk
-Start [Openbox menu](#overview) → *System* → *NomadBSD Installer* and
+Start *main menu* → *System* → *NomadBSD Installer* and
 follow the instructions.
 
 - - -
