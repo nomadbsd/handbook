@@ -126,6 +126,10 @@ multimedia programs.
 		<td>Lock the screen.</td>
 	</tr>
 	<tr>
+		<td>Ctrl+Space</td>
+		<td>Open dmenu_run.</td>
+	</tr>
+	<tr>
 		<td>Print</td>
 		<td>Open XFCE 4 screenshooter.</td>
 	</tr>
